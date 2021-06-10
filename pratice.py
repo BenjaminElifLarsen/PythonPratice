@@ -98,6 +98,22 @@ print(json.loads(jsonData)["name"])
 
 print(json.dumps(nestedData, indent=1, sort_keys=True )) #separators=(". "," = ")
 
+try:
+    print(doesExist)
+except NameError:
+    print("it did not")
+except:
+    print("did not work")
+else:
+    print("Else is run if nothing went wrong")
+finally:
+    print("Finally done")
+x = 6
+if x < 5:
+    raise Exception("Cannot be below 5")
+if not type(x) is int:
+    raise TypeError("Only integers are permitted")
 
+print("Name is " + input("Enter name: "))
 
 
