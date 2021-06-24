@@ -56,5 +56,10 @@ results = cursor.fetchall()
 for x in results:
     print(x)
 
+cursor.execute("INSERT INTO User (Name) VALUES (%s)", ("Bob);-- DROP TABLE User",)) #%s excapes query values 
+database.commit()
+print(cursor.rowcount, "record(s) inserted.")
+
+cursor.close()
 
 

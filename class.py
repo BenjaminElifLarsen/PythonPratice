@@ -40,7 +40,7 @@ p1 = TestingClass()
 print(p1.value)
 p1.value = 2
 p1.__number = 15
-print(p1.value)
+print(p1.__number)
 p2 = Person("Bob",1223)
 print(p2.name + " " + str(p2.age) + " is " + p2.something)
 print(p2.sayMyName())
