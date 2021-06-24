@@ -100,8 +100,8 @@ print(json.dumps(nestedData, indent=1, sort_keys=True )) #separators=(". "," = "
 
 try:
     print(doesExist)
-except NameError:
-    print("it did not")
+except NameError as e:
+    print(e)
 except:
     print("did not work")
 else:
