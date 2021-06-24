@@ -42,14 +42,14 @@ try:
  p1.__number = 2
  p1.__number = 15
  print(p1.__number)
-except Exception:
-    print("did not work")
+except Exception as e:
+    print(e)
 try:
     print(p1.value)
     p1.value = 223
     print(p1.value)
-except:
-    print("did not work")
+except Exception as e:
+    print(e)
 p2 = Person("Bob",1223)
 print(p2.name + " " + str(p2.age) + " is " + p2.something)
 print(p2.sayMyName())
